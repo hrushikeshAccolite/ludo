@@ -1,0 +1,21 @@
+<div class="flex justify-evenly">
+  <div>
+    <button (click)="rollDice()" class="p-1 border border-gray-300 rounded-md hover:bg-slate-100">Roll Dice</button>
+    <p class="text-xl font-mono font-bold my-1">{{dice}}</p>
+  </div>
+<table class="flex justify-center">
+  <tbody>
+    <tr *ngFor="let row of [0,1,2,3,4,5,6,7,8,9,10,11,12]">
+      <td *ngFor="let col of [0,1,2,3,4,5,6,7,8,9,10,11,12]">
+        <div class="w-10 h-10 border border-black p-1" [ngClass]="getSquareColor(row,col)">
+          <p *ngIf="row==currentPosition.row && col==currentPosition.col" class="text-2xl font-mono font-bold">P1</p>
+        </div>
+      </td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+
+
+

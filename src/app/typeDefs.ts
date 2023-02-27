@@ -8,4 +8,3 @@ export type Players = {
 }
 
 
-// { name: "Player 1", dice: 0, currentPosition: {row : 12, col: 5} },

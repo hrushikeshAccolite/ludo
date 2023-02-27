@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { Players } from '../typeDefs';
+import { faChessPawn } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-board',
@@ -8,6 +9,8 @@ import { Players } from '../typeDefs';
 })
 
 export class BoardComponent {
+
+    faChessPawn = faChessPawn;
 
     gridColor = [
     {row: 0, col: 0, color: 'bg-red-400'},
@@ -191,13 +194,14 @@ export class BoardComponent {
 
     count = [0,0,0,0];
 
+    currentPlayerIndex = 0;
+
     startingPosition = [
       {row: 12, col: 5},
       {row: 5, col: 0},
       {row: 0, col: 7},
       {row: 7, col: 12}
     ]
-
 
     players : Players[]  = [
       { name: "Player 1", dice: 0, currentPosition: {row : 12, col: 5} },
@@ -211,12 +215,23 @@ export class BoardComponent {
       return piece ? piece.color : '';
     }
 
-    rollDice(playerIndex: number){
-      this.players[playerIndex].dice = Math.floor(Math.random() * 6) +1;
-      this.movePiece(playerIndex);
-      console.log(this.players[playerIndex].currentPosition);
-      this.isWinner(playerIndex);
-      this.killPiece(playerIndex);
+    // rollDice(playerIndex: number){
+    //   this.players[playerIndex].dice = Math.floor(Math.random() * 6) +1;
+    //   this.movePiece(playerIndex);
+    //   // console.log(this.players[playerIndex].currentPosition);
+    //   this.isWinner(playerIndex);
+    //   this.killPiece(playerIndex);
+    //   playerIndex = (playerIndex + 1)%this.players.length;
+    // }
+
+    rollDice() {
+      const currentPlayer = this.players[this.currentPlayerIndex];
+      currentPlayer.dice = Math.floor(Math.random() * 6) + 1;
+      this.movePiece(this.currentPlayerIndex);
+      console.log(currentPlayer.currentPosition);
+      this.isWinner(this.currentPlayerIndex);
+      this.killPiece(this.currentPlayerIndex);
+      this.currentPlayerIndex = (this.currentPlayerIndex + 1) % this.players.length;
     }
 
     movePiece(playerIndex: number) {
@@ -225,7 +240,6 @@ export class BoardComponent {
       const newIndex = (currentIndex + player.dice)%this.path.length;
       this.count[playerIndex] = this.count[playerIndex] + player.dice;
       if (this.count[playerIndex] > this.path.length) {
-        // Piece goes out of bounds, do not move it
         alert("You can't move that far!");
         this.count[playerIndex] = this.count[playerIndex] - player.dice;
         return;
@@ -247,7 +261,6 @@ export class BoardComponent {
       }
     }
 
-    // if one player comes to the same position as another player, the player who came first gets to stay there and the other player goes back to the start
     killPiece(playerIndex: number){
       const player = this.players[playerIndex];
       for(let i = 0; i < this.players.length; i++){
@@ -257,7 +270,6 @@ export class BoardComponent {
         }
       }
     }
-
 }
 
 

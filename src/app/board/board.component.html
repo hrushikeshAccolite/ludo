@@ -1,8 +1,14 @@
 <div class="flex justify-evenly">
   <div>
-    <button (click)="rollDice(0)" class="p-1 border border-gray-300 rounded-md hover:bg-slate-100">Roll Dice P1</button>
+    <button (click)="rollDice()" class="p-1 border border-gray-300 rounded-md hover:bg-slate-100">Roll Dice</button>
     <p class="text-xl font-mono font-bold my-1">{{players[0].dice}}</p>
+    <p class="text-xl font-mono font-bold my-1">{{players[1].dice}}</p>
+    <p class="text-xl font-mono font-bold my-1">{{players[2].dice}}</p>
+    <p class="text-xl font-mono font-bold my-1">{{players[3].dice}}</p>
 
+    <p>Player {{currentPlayerIndex + 1}}'s turn.</p>
+
+<!--
     <button (click)="rollDice(1)" class="p-1 border border-gray-300 rounded-md hover:bg-slate-100">Roll Dice P2</button>
     <p class="text-xl font-mono font-bold my-1">{{players[1].dice}}</p>
 
@@ -10,17 +16,17 @@
     <p class="text-xl font-mono font-bold my-1">{{players[2].dice}}</p>
 
     <button (click)="rollDice(3)" class="p-1 border border-gray-300 rounded-md hover:bg-slate-100">Roll Dice P4</button>
-    <p class="text-xl font-mono font-bold my-1">{{players[3].dice}}</p>
+    <p class="text-xl font-mono font-bold my-1">{{players[3].dice}}</p> -->
   </div>
 <table class="flex justify-center">
   <tbody>
     <tr *ngFor="let row of [0,1,2,3,4,5,6,7,8,9,10,11,12]">
       <td *ngFor="let col of [0,1,2,3,4,5,6,7,8,9,10,11,12]">
         <div class="w-10 h-10 border border-black p-1" [ngClass]="getSquareColor(row,col)">
-          <p *ngIf="row==players[0].currentPosition.row && col==players[0].currentPosition.col" class="text-2xl font-mono font-bold">P1</p>
-          <p *ngIf="row==players[1].currentPosition.row && col==players[1].currentPosition.col" class="text-2xl font-mono font-bold">P2</p>
-          <p *ngIf="row==players[2].currentPosition.row && col==players[2].currentPosition.col" class="text-2xl font-mono font-bold">P3</p>
-          <p *ngIf="row==players[3].currentPosition.row && col==players[3].currentPosition.col" class="text-2xl font-mono font-bold">P4</p>
+          <p *ngIf="row==players[0].currentPosition.row && col==players[0].currentPosition.col" class="text-3xl text-green-500 ml-2"><fa-icon [icon]="faChessPawn"></fa-icon></p>
+          <p *ngIf="row==players[1].currentPosition.row && col==players[1].currentPosition.col" class="text-3xl text-red-500 ml-2"><fa-icon [icon]="faChessPawn"></fa-icon></p>
+          <p *ngIf="row==players[2].currentPosition.row && col==players[2].currentPosition.col" class="text-3xl text-blue-500 ml-2"><fa-icon [icon]="faChessPawn"></fa-icon></p>
+          <p *ngIf="row==players[3].currentPosition.row && col==players[3].currentPosition.col" class="text-3xl text-yellow-500 ml-2"><fa-icon [icon]="faChessPawn"></fa-icon></p>
         </div>
       </td>
     </tr>

@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Players } from '../typeDefs';
 
 @Component({
   selector: 'app-board',
@@ -188,41 +189,76 @@ export class BoardComponent {
       {row: 12, col: 5}
     ]
 
+    count = [0,0,0,0];
 
-    dice: number = 0;
+    startingPosition = [
+      {row: 12, col: 5},
+      {row: 5, col: 0},
+      {row: 0, col: 7},
+      {row: 7, col: 12}
+    ]
 
-    currentPosition = {row: 12, col: 5};
+
+    players : Players[]  = [
+      { name: "Player 1", dice: 0, currentPosition: {row : 12, col: 5} },
+      { name: "Player 2", dice: 0, currentPosition: {row: 5, col: 0} },
+      { name: "Player 3", dice: 0, currentPosition: {row: 0, col: 7} },
+      { name: "Player 4", dice: 0, currentPosition: {row: 7, col: 12} }
+    ];
 
     getSquareColor(row: number, col: number) {
       const piece = this.gridColor.find(p => p.row === row && p.col === col);
       return piece ? piece.color : '';
     }
 
-    rollDice(){
-      this.dice = Math.floor(Math.random() * 6) +1;
-      this.movePiece();
-      console.log(this.currentPosition);
-      this.isWinner();
+    rollDice(playerIndex: number){
+      this.players[playerIndex].dice = Math.floor(Math.random() * 6) +1;
+      this.movePiece(playerIndex);
+      console.log(this.players[playerIndex].currentPosition);
+      this.isWinner(playerIndex);
+      this.killPiece(playerIndex);
     }
 
-    movePiece() {
-      const currentIndex = this.path.findIndex(pos => pos.row === this.currentPosition.row && pos.col === this.currentPosition.col);
-      const newIndex = currentIndex + this.dice;
-
-      if (newIndex >= this.path.length) {
+    movePiece(playerIndex: number) {
+      const player = this.players[playerIndex];
+      const currentIndex = this.path.findIndex(pos => pos.row === player.currentPosition.row && pos.col === player.currentPosition.col);
+      const newIndex = (currentIndex + player.dice)%this.path.length;
+      this.count[playerIndex] = this.count[playerIndex] + player.dice;
+      if (this.count[playerIndex] > this.path.length) {
         // Piece goes out of bounds, do not move it
         alert("You can't move that far!");
+        this.count[playerIndex] = this.count[playerIndex] - player.dice;
         return;
       }
 
-      this.currentPosition = this.path[newIndex];
+      player.currentPosition = this.path[newIndex];
     }
 
-    isWinner(){
-      if(this.currentPosition.row == 12 && this.currentPosition.col == 5){
-        alert("You Win!");
+    isWinner(playerIndex: number){
+      const player = this.players[playerIndex];
+      if(player.currentPosition.row == 12 && player.currentPosition.col == 5 && player.name == "Player 1"){
+        alert(player.name + " Wins!");
+      } else if(player.currentPosition.row == 5 && player.currentPosition.col == 0 && player.name == "Player 2"){
+        alert(player.name + " Wins!");
+      } else if(player.currentPosition.row == 0 && player.currentPosition.col == 7 && player.name == "Player 3"){
+        alert(player.name + " Wins!");
+      } else if(player.currentPosition.row == 7 && player.currentPosition.col == 12 && player.name == "Player 4"){
+        alert(player.name + " Wins!");
       }
     }
+
+    // if one player comes to the same position as another player, the player who came first gets to stay there and the other player goes back to the start
+    killPiece(playerIndex: number){
+      const player = this.players[playerIndex];
+      for(let i = 0; i < this.players.length; i++){
+        if(this.players[i].currentPosition.row == player.currentPosition.row && this.players[i].currentPosition.col == player.currentPosition.col && i != playerIndex){
+          this.players[i].currentPosition = this.startingPosition[i];
+          this.count[i] = 0;
+        }
+      }
+    }
+
 }
+
 
 

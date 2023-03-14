@@ -13,131 +13,131 @@ export class BoardComponent {
     faChessPawn = faChessPawn;
 
     gridColor = [
-    {row: 0, col: 0, color: 'bg-red-400'},
-    {row: 0, col: 1, color: 'bg-red-400'},
-    {row: 0, col: 2, color: 'bg-red-400'},
-    {row: 0, col: 3, color: 'bg-red-400'},
-    {row: 0, col: 4, color: 'bg-red-400'},
-    {row: 1, col: 0, color: 'bg-red-400'},
-    {row: 1, col: 1, color: 'bg-red-400'},
-    {row: 1, col: 2, color: 'bg-red-400'},
-    {row: 1, col: 3, color: 'bg-red-400'},
-    {row: 1, col: 4, color: 'bg-red-400'},
-    {row: 2, col: 0, color: 'bg-red-400'},
-    {row: 2, col: 1, color: 'bg-red-400'},
-    {row: 2, col: 2, color: 'bg-red-400'},
-    {row: 2, col: 3, color: 'bg-red-400'},
-    {row: 2, col: 4, color: 'bg-red-400'},
-    {row: 3, col: 0, color: 'bg-red-400'},
-    {row: 3, col: 1, color: 'bg-red-400'},
-    {row: 3, col: 2, color: 'bg-red-400'},
-    {row: 3, col: 3, color: 'bg-red-400'},
-    {row: 3, col: 4, color: 'bg-red-400'},
-    {row: 4, col: 0, color: 'bg-red-400'},
-    {row: 4, col: 1, color: 'bg-red-400'},
-    {row: 4, col: 2, color: 'bg-red-400'},
-    {row: 4, col: 3, color: 'bg-red-400'},
-    {row: 4, col: 4, color: 'bg-red-400'},
+      {row: 0, col: 0, color: 'bg-red-400'},
+      {row: 0, col: 1, color: 'bg-red-400'},
+      {row: 0, col: 2, color: 'bg-red-400'},
+      {row: 0, col: 3, color: 'bg-red-400'},
+      {row: 0, col: 4, color: 'bg-red-400'},
+      {row: 1, col: 0, color: 'bg-red-400'},
+      {row: 1, col: 1, color: 'bg-red-400'},
+      {row: 1, col: 2, color: 'bg-red-400'},
+      {row: 1, col: 3, color: 'bg-red-400'},
+      {row: 1, col: 4, color: 'bg-red-400'},
+      {row: 2, col: 0, color: 'bg-red-400'},
+      {row: 2, col: 1, color: 'bg-red-400'},
+      {row: 2, col: 2, color: 'bg-red-400'},
+      {row: 2, col: 3, color: 'bg-red-400'},
+      {row: 2, col: 4, color: 'bg-red-400'},
+      {row: 3, col: 0, color: 'bg-red-400'},
+      {row: 3, col: 1, color: 'bg-red-400'},
+      {row: 3, col: 2, color: 'bg-red-400'},
+      {row: 3, col: 3, color: 'bg-red-400'},
+      {row: 3, col: 4, color: 'bg-red-400'},
+      {row: 4, col: 0, color: 'bg-red-400'},
+      {row: 4, col: 1, color: 'bg-red-400'},
+      {row: 4, col: 2, color: 'bg-red-400'},
+      {row: 4, col: 3, color: 'bg-red-400'},
+      {row: 4, col: 4, color: 'bg-red-400'},
 
-    {row: 8, col: 0, color: 'bg-green-400'},
-    {row: 8, col: 1, color: 'bg-green-400'},
-    {row: 8, col: 2, color: 'bg-green-400'},
-    {row: 8, col: 3, color: 'bg-green-400'},
-    {row: 8, col: 4, color: 'bg-green-400'},
-    {row: 9, col: 0, color: 'bg-green-400'},
-    {row: 9, col: 1, color: 'bg-green-400'},
-    {row: 9, col: 2, color: 'bg-green-400'},
-    {row: 9, col: 3, color: 'bg-green-400'},
-    {row: 9, col: 4, color: 'bg-green-400'},
-    {row: 10, col: 0, color: 'bg-green-400'},
-    {row: 10, col: 1, color: 'bg-green-400'},
-    {row: 10, col: 2, color: 'bg-green-400'},
-    {row: 10, col: 3, color: 'bg-green-400'},
-    {row: 10, col: 4, color: 'bg-green-400'},
-    {row: 11, col: 0, color: 'bg-green-400'},
-    {row: 11, col: 1, color: 'bg-green-400'},
-    {row: 11, col: 2, color: 'bg-green-400'},
-    {row: 11, col: 3, color: 'bg-green-400'},
-    {row: 11, col: 4, color: 'bg-green-400'},
-    {row: 12, col: 0, color: 'bg-green-400'},
-    {row: 12, col: 1, color: 'bg-green-400'},
-    {row: 12, col: 2, color: 'bg-green-400'},
-    {row: 12, col: 3, color: 'bg-green-400'},
-    {row: 12, col: 4, color: 'bg-green-400'},
+      {row: 8, col: 0, color: 'bg-green-400'},
+      {row: 8, col: 1, color: 'bg-green-400'},
+      {row: 8, col: 2, color: 'bg-green-400'},
+      {row: 8, col: 3, color: 'bg-green-400'},
+      {row: 8, col: 4, color: 'bg-green-400'},
+      {row: 9, col: 0, color: 'bg-green-400'},
+      {row: 9, col: 1, color: 'bg-green-400'},
+      {row: 9, col: 2, color: 'bg-green-400'},
+      {row: 9, col: 3, color: 'bg-green-400'},
+      {row: 9, col: 4, color: 'bg-green-400'},
+      {row: 10, col: 0, color: 'bg-green-400'},
+      {row: 10, col: 1, color: 'bg-green-400'},
+      {row: 10, col: 2, color: 'bg-green-400'},
+      {row: 10, col: 3, color: 'bg-green-400'},
+      {row: 10, col: 4, color: 'bg-green-400'},
+      {row: 11, col: 0, color: 'bg-green-400'},
+      {row: 11, col: 1, color: 'bg-green-400'},
+      {row: 11, col: 2, color: 'bg-green-400'},
+      {row: 11, col: 3, color: 'bg-green-400'},
+      {row: 11, col: 4, color: 'bg-green-400'},
+      {row: 12, col: 0, color: 'bg-green-400'},
+      {row: 12, col: 1, color: 'bg-green-400'},
+      {row: 12, col: 2, color: 'bg-green-400'},
+      {row: 12, col: 3, color: 'bg-green-400'},
+      {row: 12, col: 4, color: 'bg-green-400'},
 
-    {row: 0, col: 8, color: 'bg-blue-400'},
-    {row: 0, col: 9, color: 'bg-blue-400'},
-    {row: 0, col: 10, color: 'bg-blue-400'},
-    {row: 0, col: 11, color: 'bg-blue-400'},
-    {row: 0, col: 12, color: 'bg-blue-400'},
-    {row: 1, col: 8, color: 'bg-blue-400'},
-    {row: 1, col: 9, color: 'bg-blue-400'},
-    {row: 1, col: 10, color: 'bg-blue-400'},
-    {row: 1, col: 11, color: 'bg-blue-400'},
-    {row: 1, col: 12, color: 'bg-blue-400'},
-    {row: 2, col: 8, color: 'bg-blue-400'},
-    {row: 2, col: 9, color: 'bg-blue-400'},
-    {row: 2, col: 10, color: 'bg-blue-400'},
-    {row: 2, col: 11, color: 'bg-blue-400'},
-    {row: 2, col: 12, color: 'bg-blue-400'},
-    {row: 3, col: 8, color: 'bg-blue-400'},
-    {row: 3, col: 9, color: 'bg-blue-400'},
-    {row: 3, col: 10, color: 'bg-blue-400'},
-    {row: 3, col: 11, color: 'bg-blue-400'},
-    {row: 3, col: 12, color: 'bg-blue-400'},
-    {row: 4, col: 8, color: 'bg-blue-400'},
-    {row: 4, col: 9, color: 'bg-blue-400'},
-    {row: 4, col: 10, color: 'bg-blue-400'},
-    {row: 4, col: 11, color: 'bg-blue-400'},
-    {row: 4, col: 12, color: 'bg-blue-400'},
+      {row: 0, col: 8, color: 'bg-blue-400'},
+      {row: 0, col: 9, color: 'bg-blue-400'},
+      {row: 0, col: 10, color: 'bg-blue-400'},
+      {row: 0, col: 11, color: 'bg-blue-400'},
+      {row: 0, col: 12, color: 'bg-blue-400'},
+      {row: 1, col: 8, color: 'bg-blue-400'},
+      {row: 1, col: 9, color: 'bg-blue-400'},
+      {row: 1, col: 10, color: 'bg-blue-400'},
+      {row: 1, col: 11, color: 'bg-blue-400'},
+      {row: 1, col: 12, color: 'bg-blue-400'},
+      {row: 2, col: 8, color: 'bg-blue-400'},
+      {row: 2, col: 9, color: 'bg-blue-400'},
+      {row: 2, col: 10, color: 'bg-blue-400'},
+      {row: 2, col: 11, color: 'bg-blue-400'},
+      {row: 2, col: 12, color: 'bg-blue-400'},
+      {row: 3, col: 8, color: 'bg-blue-400'},
+      {row: 3, col: 9, color: 'bg-blue-400'},
+      {row: 3, col: 10, color: 'bg-blue-400'},
+      {row: 3, col: 11, color: 'bg-blue-400'},
+      {row: 3, col: 12, color: 'bg-blue-400'},
+      {row: 4, col: 8, color: 'bg-blue-400'},
+      {row: 4, col: 9, color: 'bg-blue-400'},
+      {row: 4, col: 10, color: 'bg-blue-400'},
+      {row: 4, col: 11, color: 'bg-blue-400'},
+      {row: 4, col: 12, color: 'bg-blue-400'},
 
-    {row: 8, col: 8, color: 'bg-yellow-400'},
-    {row: 8, col: 9, color: 'bg-yellow-400'},
-    {row: 8, col: 10, color: 'bg-yellow-400'},
-    {row: 8, col: 11, color: 'bg-yellow-400'},
-    {row: 8, col: 12, color: 'bg-yellow-400'},
-    {row: 9, col: 8, color: 'bg-yellow-400'},
-    {row: 9, col: 9, color: 'bg-yellow-400'},
-    {row: 9, col: 10, color: 'bg-yellow-400'},
-    {row: 9, col: 11, color: 'bg-yellow-400'},
-    {row: 9, col: 12, color: 'bg-yellow-400'},
-    {row: 10, col: 8, color: 'bg-yellow-400'},
-    {row: 10, col: 9, color: 'bg-yellow-400'},
-    {row: 10, col: 10, color: 'bg-yellow-400'},
-    {row: 10, col: 11, color: 'bg-yellow-400'},
-    {row: 10, col: 12, color: 'bg-yellow-400'},
-    {row: 11, col: 8, color: 'bg-yellow-400'},
-    {row: 11, col: 9, color: 'bg-yellow-400'},
-    {row: 11, col: 10, color: 'bg-yellow-400'},
-    {row: 11, col: 11, color: 'bg-yellow-400'},
-    {row: 11, col: 12, color: 'bg-yellow-400'},
-    {row: 12, col: 8, color: 'bg-yellow-400'},
-    {row: 12, col: 9, color: 'bg-yellow-400'},
-    {row: 12, col: 10, color: 'bg-yellow-400'},
-    {row: 12, col: 11, color: 'bg-yellow-400'},
-    {row: 12, col: 12, color: 'bg-yellow-400'},
+      {row: 8, col: 8, color: 'bg-yellow-400'},
+      {row: 8, col: 9, color: 'bg-yellow-400'},
+      {row: 8, col: 10, color: 'bg-yellow-400'},
+      {row: 8, col: 11, color: 'bg-yellow-400'},
+      {row: 8, col: 12, color: 'bg-yellow-400'},
+      {row: 9, col: 8, color: 'bg-yellow-400'},
+      {row: 9, col: 9, color: 'bg-yellow-400'},
+      {row: 9, col: 10, color: 'bg-yellow-400'},
+      {row: 9, col: 11, color: 'bg-yellow-400'},
+      {row: 9, col: 12, color: 'bg-yellow-400'},
+      {row: 10, col: 8, color: 'bg-yellow-400'},
+      {row: 10, col: 9, color: 'bg-yellow-400'},
+      {row: 10, col: 10, color: 'bg-yellow-400'},
+      {row: 10, col: 11, color: 'bg-yellow-400'},
+      {row: 10, col: 12, color: 'bg-yellow-400'},
+      {row: 11, col: 8, color: 'bg-yellow-400'},
+      {row: 11, col: 9, color: 'bg-yellow-400'},
+      {row: 11, col: 10, color: 'bg-yellow-400'},
+      {row: 11, col: 11, color: 'bg-yellow-400'},
+      {row: 11, col: 12, color: 'bg-yellow-400'},
+      {row: 12, col: 8, color: 'bg-yellow-400'},
+      {row: 12, col: 9, color: 'bg-yellow-400'},
+      {row: 12, col: 10, color: 'bg-yellow-400'},
+      {row: 12, col: 11, color: 'bg-yellow-400'},
+      {row: 12, col: 12, color: 'bg-yellow-400'},
 
-    {row: 6, col: 1, color: 'bg-gray-400'},
-    {row: 6, col: 2, color: 'bg-gray-400'},
-    {row: 6, col: 3, color: 'bg-gray-400'},
-    {row: 6, col: 4, color: 'bg-gray-400'},
-    {row: 6, col: 5, color: 'bg-gray-400'},
-    {row: 6, col: 6, color: 'bg-gray-400'},
-    {row: 6, col: 7, color: 'bg-gray-400'},
-    {row: 6, col: 8, color: 'bg-gray-400'},
-    {row: 6, col: 9, color: 'bg-gray-400'},
-    {row: 6, col: 10, color: 'bg-gray-400'},
-    {row: 6, col: 11, color: 'bg-gray-400'},
-    {row: 1, col: 6, color: 'bg-gray-400'},
-    {row: 2, col: 6, color: 'bg-gray-400'},
-    {row: 3, col: 6, color: 'bg-gray-400'},
-    {row: 4, col: 6, color: 'bg-gray-400'},
-    {row: 5, col: 6, color: 'bg-gray-400'},
-    {row: 7, col: 6, color: 'bg-gray-400'},
-    {row: 8, col: 6, color: 'bg-gray-400'},
-    {row: 9, col: 6, color: 'bg-gray-400'},
-    {row: 10, col: 6, color: 'bg-gray-400'},
-    {row: 11, col: 6, color: 'bg-gray-400'},
+      {row: 6, col: 1, color: 'bg-gray-400'},
+      {row: 6, col: 2, color: 'bg-gray-400'},
+      {row: 6, col: 3, color: 'bg-gray-400'},
+      {row: 6, col: 4, color: 'bg-gray-400'},
+      {row: 6, col: 5, color: 'bg-gray-400'},
+      {row: 6, col: 6, color: 'bg-gray-400'},
+      {row: 6, col: 7, color: 'bg-gray-400'},
+      {row: 6, col: 8, color: 'bg-gray-400'},
+      {row: 6, col: 9, color: 'bg-gray-400'},
+      {row: 6, col: 10, color: 'bg-gray-400'},
+      {row: 6, col: 11, color: 'bg-gray-400'},
+      {row: 1, col: 6, color: 'bg-gray-400'},
+      {row: 2, col: 6, color: 'bg-gray-400'},
+      {row: 3, col: 6, color: 'bg-gray-400'},
+      {row: 4, col: 6, color: 'bg-gray-400'},
+      {row: 5, col: 6, color: 'bg-gray-400'},
+      {row: 7, col: 6, color: 'bg-gray-400'},
+      {row: 8, col: 6, color: 'bg-gray-400'},
+      {row: 9, col: 6, color: 'bg-gray-400'},
+      {row: 10, col: 6, color: 'bg-gray-400'},
+      {row: 11, col: 6, color: 'bg-gray-400'}
     ]
 
     path = [
@@ -194,6 +194,8 @@ export class BoardComponent {
 
     count = [0,0,0,0];
 
+    winner = "";
+
     currentPlayerIndex = 0;
 
     startingPosition = [
@@ -215,15 +217,6 @@ export class BoardComponent {
       return piece ? piece.color : '';
     }
 
-    // rollDice(playerIndex: number){
-    //   this.players[playerIndex].dice = Math.floor(Math.random() * 6) +1;
-    //   this.movePiece(playerIndex);
-    //   // console.log(this.players[playerIndex].currentPosition);
-    //   this.isWinner(playerIndex);
-    //   this.killPiece(playerIndex);
-    //   playerIndex = (playerIndex + 1)%this.players.length;
-    // }
-
     rollDice() {
       const currentPlayer = this.players[this.currentPlayerIndex];
       currentPlayer.dice = Math.floor(Math.random() * 6) + 1;
@@ -234,7 +227,7 @@ export class BoardComponent {
       this.currentPlayerIndex = (this.currentPlayerIndex + 1) % this.players.length;
     }
 
-    movePiece(playerIndex: number) {
+      movePiece(playerIndex: number) {
       const player = this.players[playerIndex];
       const currentIndex = this.path.findIndex(pos => pos.row === player.currentPosition.row && pos.col === player.currentPosition.col);
       const newIndex = (currentIndex + player.dice)%this.path.length;
@@ -252,12 +245,16 @@ export class BoardComponent {
       const player = this.players[playerIndex];
       if(player.currentPosition.row == 12 && player.currentPosition.col == 5 && player.name == "Player 1"){
         alert(player.name + " Wins!");
+        this.winner = player.name;
       } else if(player.currentPosition.row == 5 && player.currentPosition.col == 0 && player.name == "Player 2"){
         alert(player.name + " Wins!");
+        this.winner = player.name;
       } else if(player.currentPosition.row == 0 && player.currentPosition.col == 7 && player.name == "Player 3"){
         alert(player.name + " Wins!");
+        this.winner = player.name;
       } else if(player.currentPosition.row == 7 && player.currentPosition.col == 12 && player.name == "Player 4"){
         alert(player.name + " Wins!");
+        this.winner = player.name;
       }
     }
 

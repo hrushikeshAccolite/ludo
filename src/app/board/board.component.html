@@ -22,7 +22,7 @@
         <td *ngFor="let col of [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]">
           <div
             class="w-10 h-10 border border-black p-1"
-            [ngClass]="getSquareColor(row, col)"
+            [ngStyle]="(row < 5 && col < 5) ? {'backgroundColor' : 'red'} : (row >7 && col < 5) ? {'backgroundColor' : 'green'}  : (row > 7 && col > 7) ? {'backgroundColor' : 'yellow'} : (row < 5 && col > 7) ? {'backgroundColor' : 'blue'} : ((row == 6 && col !=0 && col != 12 ) || (col == 6 && row !=0 && row != 12 )) ? {'backgroundColor' : 'grey'} : {'backgroundColor' : 'white'}"
           >
             <p
               *ngIf="

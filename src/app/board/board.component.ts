@@ -12,134 +12,6 @@ export class BoardComponent {
 
     faChessPawn = faChessPawn;
 
-    gridColor = [
-      {row: 0, col: 0, color: 'bg-red-400'},
-      {row: 0, col: 1, color: 'bg-red-400'},
-      {row: 0, col: 2, color: 'bg-red-400'},
-      {row: 0, col: 3, color: 'bg-red-400'},
-      {row: 0, col: 4, color: 'bg-red-400'},
-      {row: 1, col: 0, color: 'bg-red-400'},
-      {row: 1, col: 1, color: 'bg-red-400'},
-      {row: 1, col: 2, color: 'bg-red-400'},
-      {row: 1, col: 3, color: 'bg-red-400'},
-      {row: 1, col: 4, color: 'bg-red-400'},
-      {row: 2, col: 0, color: 'bg-red-400'},
-      {row: 2, col: 1, color: 'bg-red-400'},
-      {row: 2, col: 2, color: 'bg-red-400'},
-      {row: 2, col: 3, color: 'bg-red-400'},
-      {row: 2, col: 4, color: 'bg-red-400'},
-      {row: 3, col: 0, color: 'bg-red-400'},
-      {row: 3, col: 1, color: 'bg-red-400'},
-      {row: 3, col: 2, color: 'bg-red-400'},
-      {row: 3, col: 3, color: 'bg-red-400'},
-      {row: 3, col: 4, color: 'bg-red-400'},
-      {row: 4, col: 0, color: 'bg-red-400'},
-      {row: 4, col: 1, color: 'bg-red-400'},
-      {row: 4, col: 2, color: 'bg-red-400'},
-      {row: 4, col: 3, color: 'bg-red-400'},
-      {row: 4, col: 4, color: 'bg-red-400'},
-
-      {row: 8, col: 0, color: 'bg-green-400'},
-      {row: 8, col: 1, color: 'bg-green-400'},
-      {row: 8, col: 2, color: 'bg-green-400'},
-      {row: 8, col: 3, color: 'bg-green-400'},
-      {row: 8, col: 4, color: 'bg-green-400'},
-      {row: 9, col: 0, color: 'bg-green-400'},
-      {row: 9, col: 1, color: 'bg-green-400'},
-      {row: 9, col: 2, color: 'bg-green-400'},
-      {row: 9, col: 3, color: 'bg-green-400'},
-      {row: 9, col: 4, color: 'bg-green-400'},
-      {row: 10, col: 0, color: 'bg-green-400'},
-      {row: 10, col: 1, color: 'bg-green-400'},
-      {row: 10, col: 2, color: 'bg-green-400'},
-      {row: 10, col: 3, color: 'bg-green-400'},
-      {row: 10, col: 4, color: 'bg-green-400'},
-      {row: 11, col: 0, color: 'bg-green-400'},
-      {row: 11, col: 1, color: 'bg-green-400'},
-      {row: 11, col: 2, color: 'bg-green-400'},
-      {row: 11, col: 3, color: 'bg-green-400'},
-      {row: 11, col: 4, color: 'bg-green-400'},
-      {row: 12, col: 0, color: 'bg-green-400'},
-      {row: 12, col: 1, color: 'bg-green-400'},
-      {row: 12, col: 2, color: 'bg-green-400'},
-      {row: 12, col: 3, color: 'bg-green-400'},
-      {row: 12, col: 4, color: 'bg-green-400'},
-
-      {row: 0, col: 8, color: 'bg-blue-400'},
-      {row: 0, col: 9, color: 'bg-blue-400'},
-      {row: 0, col: 10, color: 'bg-blue-400'},
-      {row: 0, col: 11, color: 'bg-blue-400'},
-      {row: 0, col: 12, color: 'bg-blue-400'},
-      {row: 1, col: 8, color: 'bg-blue-400'},
-      {row: 1, col: 9, color: 'bg-blue-400'},
-      {row: 1, col: 10, color: 'bg-blue-400'},
-      {row: 1, col: 11, color: 'bg-blue-400'},
-      {row: 1, col: 12, color: 'bg-blue-400'},
-      {row: 2, col: 8, color: 'bg-blue-400'},
-      {row: 2, col: 9, color: 'bg-blue-400'},
-      {row: 2, col: 10, color: 'bg-blue-400'},
-      {row: 2, col: 11, color: 'bg-blue-400'},
-      {row: 2, col: 12, color: 'bg-blue-400'},
-      {row: 3, col: 8, color: 'bg-blue-400'},
-      {row: 3, col: 9, color: 'bg-blue-400'},
-      {row: 3, col: 10, color: 'bg-blue-400'},
-      {row: 3, col: 11, color: 'bg-blue-400'},
-      {row: 3, col: 12, color: 'bg-blue-400'},
-      {row: 4, col: 8, color: 'bg-blue-400'},
-      {row: 4, col: 9, color: 'bg-blue-400'},
-      {row: 4, col: 10, color: 'bg-blue-400'},
-      {row: 4, col: 11, color: 'bg-blue-400'},
-      {row: 4, col: 12, color: 'bg-blue-400'},
-
-      {row: 8, col: 8, color: 'bg-yellow-400'},
-      {row: 8, col: 9, color: 'bg-yellow-400'},
-      {row: 8, col: 10, color: 'bg-yellow-400'},
-      {row: 8, col: 11, color: 'bg-yellow-400'},
-      {row: 8, col: 12, color: 'bg-yellow-400'},
-      {row: 9, col: 8, color: 'bg-yellow-400'},
-      {row: 9, col: 9, color: 'bg-yellow-400'},
-      {row: 9, col: 10, color: 'bg-yellow-400'},
-      {row: 9, col: 11, color: 'bg-yellow-400'},
-      {row: 9, col: 12, color: 'bg-yellow-400'},
-      {row: 10, col: 8, color: 'bg-yellow-400'},
-      {row: 10, col: 9, color: 'bg-yellow-400'},
-      {row: 10, col: 10, color: 'bg-yellow-400'},
-      {row: 10, col: 11, color: 'bg-yellow-400'},
-      {row: 10, col: 12, color: 'bg-yellow-400'},
-      {row: 11, col: 8, color: 'bg-yellow-400'},
-      {row: 11, col: 9, color: 'bg-yellow-400'},
-      {row: 11, col: 10, color: 'bg-yellow-400'},
-      {row: 11, col: 11, color: 'bg-yellow-400'},
-      {row: 11, col: 12, color: 'bg-yellow-400'},
-      {row: 12, col: 8, color: 'bg-yellow-400'},
-      {row: 12, col: 9, color: 'bg-yellow-400'},
-      {row: 12, col: 10, color: 'bg-yellow-400'},
-      {row: 12, col: 11, color: 'bg-yellow-400'},
-      {row: 12, col: 12, color: 'bg-yellow-400'},
-
-      {row: 6, col: 1, color: 'bg-gray-400'},
-      {row: 6, col: 2, color: 'bg-gray-400'},
-      {row: 6, col: 3, color: 'bg-gray-400'},
-      {row: 6, col: 4, color: 'bg-gray-400'},
-      {row: 6, col: 5, color: 'bg-gray-400'},
-      {row: 6, col: 6, color: 'bg-gray-400'},
-      {row: 6, col: 7, color: 'bg-gray-400'},
-      {row: 6, col: 8, color: 'bg-gray-400'},
-      {row: 6, col: 9, color: 'bg-gray-400'},
-      {row: 6, col: 10, color: 'bg-gray-400'},
-      {row: 6, col: 11, color: 'bg-gray-400'},
-      {row: 1, col: 6, color: 'bg-gray-400'},
-      {row: 2, col: 6, color: 'bg-gray-400'},
-      {row: 3, col: 6, color: 'bg-gray-400'},
-      {row: 4, col: 6, color: 'bg-gray-400'},
-      {row: 5, col: 6, color: 'bg-gray-400'},
-      {row: 7, col: 6, color: 'bg-gray-400'},
-      {row: 8, col: 6, color: 'bg-gray-400'},
-      {row: 9, col: 6, color: 'bg-gray-400'},
-      {row: 10, col: 6, color: 'bg-gray-400'},
-      {row: 11, col: 6, color: 'bg-gray-400'}
-    ]
-
     path = [
       {row: 12, col: 5},
       {row: 11, col: 5},
@@ -212,11 +84,6 @@ export class BoardComponent {
       { name: "Player 4", dice: 0, currentPosition: {row: 7, col: 12} }
     ];
 
-    getSquareColor(row: number, col: number) {
-      const piece = this.gridColor.find(p => p.row === row && p.col === col);
-      return piece ? piece.color : '';
-    }
-
     rollDice() {
       const currentPlayer = this.players[this.currentPlayerIndex];
       currentPlayer.dice = Math.floor(Math.random() * 6) + 1;
@@ -228,9 +95,9 @@ export class BoardComponent {
     }
 
       movePiece(playerIndex: number) {
-      const player = this.players[playerIndex];
-      const currentIndex = this.path.findIndex(pos => pos.row === player.currentPosition.row && pos.col === player.currentPosition.col);
-      const newIndex = (currentIndex + player.dice)%this.path.length;
+      let player = this.players[playerIndex];
+      let currentIndex = this.path.findIndex(pos => pos.row === player.currentPosition.row && pos.col === player.currentPosition.col);
+      let newIndex = (currentIndex + player.dice)%this.path.length;
       this.count[playerIndex] = this.count[playerIndex] + player.dice;
       if (this.count[playerIndex] > this.path.length) {
         alert("You can't move that far!");
